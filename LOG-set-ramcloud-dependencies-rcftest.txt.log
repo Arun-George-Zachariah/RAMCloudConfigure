@@ -1,0 +1,16 @@
+RAMCLOUD_HOME not specified, going for ~/RAMCloud
+>> RAMCLOUD CONFIGURE
+	 ## UPDATING CLUSTER NODES ... 
+	 + hp127.utah.cloudlab.us ... OK ☕
+	 + hp147.utah.cloudlab.us ... OK ☕
+	 + hp145.utah.cloudlab.us ... OK ☕
+	 + hp155.utah.cloudlab.us ... OK ☕
+
+	 ## WAITING FOR NODES TO FINISH
+SAT AUG 17 18:07:42 CDT 2019
+	 ## CHECKING PIDS STATUS.. 🤖
+REMAINING:       4 /       4 .... 🤞🏼 
+REMAINING:       4 /       4 .... 🤞🏼 
+REMAINING: 0 /       4 .... 🤞🏼 
+SAT AUG 17 18:08:42 CDT 2019
+>> SETUP FINISHED 🌮
