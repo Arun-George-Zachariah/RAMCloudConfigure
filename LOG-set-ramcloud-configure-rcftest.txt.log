@@ -1,6 +1,0 @@
-	 ## GENERATING COORDINATOR AND SERVERS FILE
->> CONFIGURING ZOOKEEPER SERVICE
-	 ## GENERATING zoo.cfg ramcloud-env.sh
->> COPYING CONFIG FILES
->> CREATING /mydata/zoo AND /mydata/rc AND /mydata/logs
->> SETUP FINISHED 🌮
