@@ -6,11 +6,7 @@ echo ">> RAMCLOUD CONFIGURE"
 
 echo "\t ## CONFIG AND COMPILE RAMCLOUD LOCAL"
 echo "\t ## DOWNLOADING RAMCLOUD (latest) and RAMCloudServices"
-git clone https://github.com/PlatformLab/RAMCloud.git $HOME/RAMCloud
-git clone https://github.com/debarron/RAMCloudServices.git $HOME/rc-services
-
-mv $HOME/rc-services/conf $HOME/RAMCloud
-mv $HOME/rc-services/sbin $HOME/RAMCloud 
+git clone https://github.com/debarron/RAMCloud.git $HOME/RAMCloud
 
 mkdir $HOME/RAMCloud/zookeeper
 cd $HOME/RAMCloud
@@ -27,6 +23,5 @@ make -j12
 
 cp -r $HOME/RAMCloud "$SHARED_DIR/RAMCloud_$ID"
 rm -Rf $HOME/RAMCloud
-rm -Rf $HOME/rc-services
 
 exit 0

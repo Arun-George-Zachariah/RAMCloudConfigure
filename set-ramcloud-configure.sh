@@ -61,7 +61,8 @@ echo -e ">> CREATING $RAMCLOUD_ZOOKEEPER_DATA_DIR AND $RAMCLOUD_BACKUP_DIR AND $
 id=1
 for machine in $(cat $MACHINES)
 do
-  script="mkdir -p $RAMCLOUD_ZOOKEEPER_DATA_DIR & mkdir -p $RAMCLOUD_BACKUP_DIR & mkdir -p $RAMCLOUD_LOG_DIR"
+  script="mkdir -p $RAMCLOUD_ZOOKEEPER_DATA_DIR && mkdir -p $RAMCLOUD_BACKUP_DIR && mkdir -p $RAMCLOUD_LOG_DIR"
+  ssh -i $PRIVATE_KEY -o "StrictHostKeyChecking no" "$USER_NAME@$machine" "echo 'export RAMCLOUD_HOME=\"\$HOME/RAMCloud\"' >> \$HOME/.bashrc"
   ssh -i $PRIVATE_KEY -o "StrictHostKeyChecking no" "$USER_NAME@$machine" "$script"
   ssh -i $PRIVATE_KEY -o "StrictHostKeyChecking no" "$USER_NAME@$machine" "echo \"$id\" > $RAMCLOUD_ZOOKEEPER_DATA_DIR/myid"
   id=$(($id+1))
